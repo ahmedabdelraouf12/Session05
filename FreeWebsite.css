@@ -128,13 +128,23 @@ header {
       #minigray {
         background-color: #34365a;
       }
-      
-      .parag1{
-padding: 2rem;
-display: flex;
-justify-content: space-between;
-flex-direction: column;        
 
+      .parag1 {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h3{
+font-weight: 500;
+font-size: 30px;
+        }
+        p{
+          font-style: italic;
+          a{
+            color: black;
+            
+          }
+        }
       }
     }
   }
