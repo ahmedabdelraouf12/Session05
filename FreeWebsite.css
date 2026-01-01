@@ -20,27 +20,27 @@ header {
   }
 }
 
-.section0{
-width:100px ;
-height: 50px;
-position: fixed;
-top: 15px;
-/* position: absolute; */
+.section0 {
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  top: 15px;
+  /* position: absolute; */
 
-div{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  p{
-    color:black ;
-    font-size: 20px;
-    font-weight: 500;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
   }
-  img{
-    width: 50px;
-    height: 50px;
-  }
-}
 }
 .section1 {
   width: 100%;
@@ -62,6 +62,7 @@ div{
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      animation-duration: 1s;
       p {
         font-size: 1.125rem;
         text-transform: uppercase;
@@ -218,13 +219,15 @@ div{
   height: 100%;
   background-color: rgb(157, 58, 58);
   .sec3up {
+    padding: 5rem 0 26rem 0;
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     background-color: #34365a;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    justify-content: start;
     h1 {
       color: white;
       font-size: 30px;
@@ -283,14 +286,14 @@ div{
       flex-direction: column;
 
       .sec3mainup {
-        height: 50vh;
-
+        padding: 5rem 0 23rem 0;
+        /* height: 50vh; */
         width: 100%;
         position: relative;
         .imgup1 {
-          height: 80vh;
+          height: 100vh;
 
-          width: 60%;
+          width: 80%;
           background-image: url(./Image/ddd.jpg);
           background-size: cover;
           display: flex;
@@ -298,19 +301,21 @@ div{
           align-items: center;
           /* gap: 2%; */
           position: absolute;
-          top: -250px;
+          top: -320px;
           /* right: 0; */
           .contain {
             position: absolute;
-            top: 90px;
-            right: -350px;
-            padding: 2rem 1rem;
+            top: 60px;
+            right: -319px;
+            padding: 3rem 4rem;
             width: 80%;
             /* height: 80%; */
             background-color: white;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            gap: 1rem;
+
             h2 {
               font-size: 3rem;
               font-weight: 900;
@@ -507,6 +512,7 @@ div{
 .section4 {
   width: 100%;
   height: 100vh;
+  margin-bottom: 50px;
   /* padding: 1rem 10rem; */
   background-color: #f1bb13;
 
@@ -578,18 +584,41 @@ div{
   }
 }
 .section5 {
+  margin-top: 51px;
+  margin-bottom: 50px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   width: 100%;
-  height: 100vh;
-  background-color: white;
+  /* height: 100vh; */
+  /* background-color: #f7f7f7; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
-
+  position: relative;
+  .upimg {
+    width: 34%;
+    height: 304px;
+    background-size: cover;
+    background-image: url(./Image/img1.jpeg);
+    position: absolute;
+    top: -47px;
+    left: 52px;
+    z-index: -1;
+  }
+  .upimg02 {
+    width: 34%;
+    height: 308px;
+    background-size: cover;
+    background-image: url(./Image/img2.jpeg);
+    position: absolute;
+    bottom: -50px;
+    right: 40px;
+    z-index: -1;
+  }
   .sec5main {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: #34365a; */
     display: flex;
     flex-wrap: wrap;
@@ -597,37 +626,37 @@ div{
     align-items: center;
     .sec5left {
       width: 40%;
-      height: 70%;
+      /* height: 70%; */
       .sec5leftup {
         width: 100%;
-        height: 400px;
+        /* height: 400px; */
 
         color: white;
         background-image: url(./Image/meeting.jpg);
         background-size: cover;
         .sec5h2 {
           width: 100%;
-          height: 100%;
+          /* height: 100%; */
           padding: 8rem 2em;
           background-color: #0000008a;
         }
       }
       .sec5leftlow {
         width: 100%;
-        height: 400px;
+        /* height: 400px; */
         /* background-color: aqua; */
         display: flex;
         /* flex-wrap: wrap; */
         justify-content: center;
         .sec5leftlowleft {
           width: 50%;
-          height: 270px;
+          /* height: 270px; */
           background-image: url(./Image/boyAndLap.jpg);
           background-size: cover;
         }
         .sec5leftlowright {
           width: 50%;
-          height: 270px;
+          /* height: 270px; */
           display: flex;
           flex-direction: column;
           gap: 1rem;
@@ -654,7 +683,7 @@ div{
   }
   .sec5right {
     width: 40%;
-    height: 70%;
+    /* height: 70%; */
     /* background-color: #34365a; */
     /* background-color: aqua; */
     .sec5rightup {
@@ -711,9 +740,11 @@ div{
     }
     .sec5rightlow {
       width: 100%;
-      height: 400px;
+      /* height: 400px; */
+      height: 256px;
       background-image: url(./Image/Happy.jpg);
       background-size: cover;
+     
     }
   }
 }
@@ -927,7 +958,6 @@ div{
       /* justify-content: space-between; */
       color: white;
       gap: 2rem;
-     
     }
     .contentupright {
       width: calc(100% / 3);
@@ -939,43 +969,42 @@ div{
       padding: 1rem 3rem;
       gap: 2rem;
 
-input{
-  width: 100%;
-  height: 50px;
-  &::placeholder{
-    padding: 0 5px ;
-  }
-}
-textarea{
-  width: 100%;
-  height: 150px;
-}
-button{
-  background-color: #f1bb13;
-  border:none;
-  border-radius: 2rem;
-  border-width: 5px;
-  text-transform: uppercase;
-  color: black;
-font-size: 20px;
-font-weight: 400;
-  width: 100%;
-  height: 3rem;
-  /* color: #000000; */
-  &:hover {
-    background-color: grey;
-    color: #34365a;
-    border: 4px solid white;
-  }  
-}
+      input {
+        width: 100%;
+        height: 50px;
+        &::placeholder {
+          padding: 0 5px;
+        }
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+      }
+      button {
+        background-color: #f1bb13;
+        border: none;
+        border-radius: 2rem;
+        border-width: 5px;
+        text-transform: uppercase;
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        width: 100%;
+        height: 3rem;
+        /* color: #000000; */
+        &:hover {
+          background-color: grey;
+          color: #34365a;
+          border: 4px solid white;
+        }
+      }
     }
   }
-
 }
-.section8{
+.section8 {
   width: 100%;
   /* height: 40vh; */
-  .contentlow{
+  .contentlow {
     width: 100%;
     /* height: 20vh; */
     padding: 2rem 4rem;
@@ -984,7 +1013,7 @@ font-weight: 400;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    p{
+    p {
       padding: 2rem 0;
 
       color: white;
